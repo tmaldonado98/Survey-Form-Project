@@ -1,0 +1,104 @@
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Joan-Regular';
+    src: url(./Joan-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    text-align: center;
+    font-family: 'Joan-Regular', Georgia, Verdana;
+}
+
+main {
+    background-color: rgb(152, 224, 255);
+}
+
+p {
+    font-size: 2.2rem;
+    
+}
+
+#heading {
+    font-size: 6.5rem;
+    position: relative;
+    top: 5rem;
+}
+
+#p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    padding: 3rem;
+}
+
+#outer-div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    background-color: rgb(255, 241, 219);
+}
+
+#form-section {
+    margin-top: 3rem;
+    text-align: right;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-p {
+    text-align: left;
+}
+
+.container-input-text {
+    display: flex;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.left {
+    width: 100%;
+}
+
+.right {
+
+}
+
+
+
+#container-checkbox {
+    display: flex;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    margin-top: 5rem;
+} 
+
+#right-checkbox {
+    width: 18.7rem;
+}
+
+#left-checkbox {
+    width: 50%;
+    align-self: center;
+}
+
+.border-box {
+    border: 0.5px solid black;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#right-checkbox .border-box:nth-child(1){
+    margin-top: 0;
+}

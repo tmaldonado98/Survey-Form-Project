@@ -1,0 +1,36 @@
+            <ul id="contactBar">
+                <li id="liP">Contact Me</li>
+                <li id="github"><a href="https://github.com/tmaldonado98", 
+                    target="blank"><img src="./images/github icon.png">
+                    </a></li>
+                <li id="email"><a href="mailto: tmaldonadotrs@gmail.com",
+                    target="blank"><img src="./images/mail icon.png"> 
+                    </a></li>
+                <li id="ig"><a href="https://www.instagram.com/tomas.m.98/",
+                    target="blank"><img src="./images/instagram icon.png"> 
+                    </a></li>                    
+            </ul>
+
+            //
+
+
+#contactBar {
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    padding-top: 7px;
+  }
+  
+  #contactBar li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #contactBar #liP {
+    position: relative;
+    top: -1rem;
+    font-family: x;
+  }
