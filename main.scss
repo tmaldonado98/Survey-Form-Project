@@ -18,7 +18,7 @@ main {
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     
 }
 
@@ -32,7 +32,7 @@ p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     padding: 3rem;
 }
 
@@ -73,9 +73,9 @@ p {
 
 }
 
+//
 
-
-#container-checkbox {
+#container-checkbox, #container-radio {
     display: flex;
     width: 60%;
     margin-right: auto;
@@ -84,11 +84,11 @@ p {
     margin-top: 5rem;
 } 
 
-#right-checkbox {
+#right-checkbox, #right-radio {
     width: 18.7rem;
 }
 
-#left-checkbox {
+#left-checkbox, #left-radio {
     width: 50%;
     align-self: center;
 }
@@ -101,4 +101,30 @@ p {
 
 #right-checkbox .border-box:nth-child(1){
     margin-top: 0;
+}
+
+//
+
+/*#container-radio {
+    display: flex;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+}*/
+
+.border-box2 {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 8rem;
+}
+
+#right-radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-column {
+    display: flex;
+    justify-content: space-between;
 }
