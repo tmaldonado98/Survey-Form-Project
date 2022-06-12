@@ -27,7 +27,8 @@
                         <p class="form-p">First and Last Name:</p>
                     </div>
                     <div class="right">
-                        <input id="name-input" type="text" name="name">
+                        <input id="name-input" type="text" name="name"
+                            required="required">
                     </div>
                 </div>
 
@@ -36,7 +37,8 @@
                         <p class="form-p">Your Email Address:</p>
                     </div>
                     <div class="right">
-                        <input id="email-input" type="text" name="email">
+                        <input id="email-input" type="email" name="email"
+                            required="required">
                     </div>
                 </div>
 
@@ -45,8 +47,8 @@
                         <p class="form-p">Your Age:</p>
                     </div>
                     <div class="right">
-                        <input id="age-input" type="text" 
-                            name="age">
+                        <input id="age-input" type="number" name="age" min="18" 
+                        max="95" required="required">
                     </div>
                 </div>
                 
@@ -62,13 +64,13 @@
                         </div>
                         <div class="border-box">
                             <input class="name-checkbox" type="checkbox" 
-                                name="name" value="Theodora"/> 
-                                <p>Theodora</p>
+                                name="name" value="Teodora"/> 
+                                <p>Teodora</p>
                         </div>
                         <div class="border-box">
                             <input class="name-checkbox" type="checkbox" 
-                                name="name" value="Alejandria"/> 
-                                <p>Alejandria</p>
+                                name="name" value="Alejandría"/> 
+                                <p>Alejandría</p>
                         </div>
                         <div class="border-box">
                             <input class="name-checkbox" type="checkbox" 
@@ -107,16 +109,93 @@
                         </div>
                     </div>
                 </div>
-            </form>  
+
+                <div id="container-list">
+                    <div id="left-list">
+                        <p class="form-p">Select One Country You'd Like
+                            To Visit:</p>
+                    </div>
+                    <div id="right-list">
+                        <select id="drop-list" name="places">
+                            <option value="empty"><p id="p"></p></option>
+                            <option value="costa-rica"><p id="p">Costa Rica</p></option>
+                            <option value="italy"><p id="p">Italy</p></option>
+                            <option value="china"><p id="p">China</p></option>
+                            <option value="egypt"><p id="p">Egypt</p></option>
+                            <option value="australia"><p id="p">Australia</p></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="container-file">
+                    <div id="left-file">
+                        <p class="form-p">Upload a short introduction about yourself:</p>
+                    </div>
+                    <div id="right-file">
+                        <input id="file" type="file" name="short-intro"><br>
+                    </div>
+                </div>
+            
+
+
         </div>
+        <div id="outer-div2">
+            <div id="container-comments-sub">
+                <div id="container-comment">
+                    <div id="left-comment">
+                        <p class="form-p">We greatly appreciate your feedback.<br>
+                            Please take a moment to tell us what you think about our
+                            products and services:
+                        </p>
+                    </div>
+                    <div id="right-comment">
+                        <br><br>
+                        <textarea name="comment" cols="52" rows="10"></textarea>
+                    </div>
+                </div>
 
+                <div id="container-sub">
+                    <div id="left-sub">
+                        <p class="form-p">Would You Like To Subscribe To Our
+                            Weekly Newsletter?</p>
+                    </div>
+                    <div id="right-sub">
+                        <div class="container-column">
+                            <input type="radio" name="subscription" value="yes"
+                                class="sub-radio"><p>Yes please!</p>
+                        </div>
+                        <div class="container-column">
+                            <input type="radio" name="subscription" value="no"
+                                class="sub-radio"><p>No, thank you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <input id="submit" type="submit" 
+                    name="submit" value="Submit Survey"/><!--onclick="window.location.reload()"-->
+                
+            </form>
 
-
+        <div id="contact-bar">
+            <div id="github"><i><a href="https://github.com/tmaldonado98", 
+                target="blank"><img src="./general icons/github icon.png">
+                </a></i></div>
+            <div id="email"><i><a href="mailto: tmaldonadotrs@gmail.com",
+                target="blank"><img src="./general icons/mail icon.png"> 
+                </a></i></div>
+            <div id="ig"><i><a href="https://www.instagram.com/tomas.m.98/",
+                target="blank"><img src="./general icons/instagram icon.png"> 
+                </a></i></div>                    
+        </div>
     </main>
 
-
-    <footer></footer>
-
+    <footer>
+        <p>
+        Tomás Maldonado 2022
+        </p>
+    </footer>
 
 </body>
 </html>
