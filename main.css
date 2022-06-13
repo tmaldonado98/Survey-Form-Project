@@ -174,6 +174,11 @@ select[name=places] {
   text-align: center;
 }
 
+textarea {
+  width: 95%;
+  height: 15rem;
+}
+
 #container-sub {
   display: flex;
   flex-direction: column;
@@ -245,19 +250,115 @@ footer p {
 
 
 
-@media screen and (min-width: 350px) {
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  #outer-div, #outer-div2 {
+    width: 100%;
+  }
+
+  #form-section {
+    width: 100%;
+  }
+
   .container-input-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
+
+  .form-p {
+    text-align: center;
+  }
+
+#container-checkbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
 }
 
-@media screen and (min-width: 350px) and (max-width: 800px) {
-  #outer-div, #outer-div2 {
-    width: 100%;
-  }
+#left-checkbox {
+  width: 70%;
+}
+
+#right-checkbox {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+#container-radio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-radio {
+  width: 70%;
+  align-self: center;
+}
+
+#right-radio {
+  align-self: center;
+}
+
+#container-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#left-list {
+  width: 70%;
+  align-self: center;
+}
+
+#right-list {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+#container-file {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#left-file {
+  width: 70%;
+  align-self: center;
+}
+
+#right-file {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+#outer-div2 {
+  margin-top: 10rem;
+}
+
+#container-comments-sub {
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#container-comment, #container-sub {
+  width: 100%;
+}
+
+textarea {
+  margin-bottom: 5rem;
+}
+
   #contact-bar {
     position: fixed;
     width: fit-content;
@@ -282,5 +383,29 @@ footer p {
     margin-left: auto;
     margin-right: auto;
   }
+
+
+
+
+  #container-radio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #left-radio {
+    width: 70%;
+    align-self: center;
+  }
+  
+  #left-radio .form-p {
+    text-align: center;
+  }
+
+  #right-radio {
+    align-self: center;
+  }
+
+
 }
 
