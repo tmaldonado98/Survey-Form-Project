@@ -43,7 +43,9 @@ p {
 
 
 #outer-div, #outer-div2 {
-  
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10rem;
   background-color: rgb(255, 241, 219);
 }
@@ -63,7 +65,7 @@ p {
 
 .container-input-text {
   display: flex;
-  width: 60%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 1.5rem;
@@ -83,7 +85,7 @@ p {
 
 #container-checkbox, #container-radio, #container-list, #container-file {
   display: flex;
-  width: 60%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   justify-content: space-between;
@@ -377,15 +379,24 @@ textarea {
 
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 801px) and (max-width: 1100px) {
   #outer-div, #outer-div2{
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
+  #form-section {
+    margin-top: 3rem;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-
+  .container-input-text, #container-checkbox, #container-radio, #container-list,
+    #container-file, #container-comments-sub {
+    width: 100%;
+  }
 
   #container-radio {
     width: 100%;
