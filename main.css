@@ -12,8 +12,12 @@ html {
   font-family: "Joan-Regular", Georgia, Verdana;
 }
 
-main {
+body{
   background-color: rgb(152, 224, 255);
+
+}
+
+main {
   padding-bottom: 5rem;
 }
 
@@ -228,14 +232,12 @@ textarea {
 }
 
 #contact-bar {
-  position: fixed;
-  left: 0;
-  padding-left: 1rem;
-  top: 50%;
+  padding-left: 6rem;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: start;
+  flex-direction: row;
   gap: 2rem;
+  align-items: center;
 }
 
 footer {
@@ -363,15 +365,9 @@ textarea {
 }
 
   #contact-bar {
-    position: fixed;
-    width: fit-content;
-    top: auto;
-    bottom: 10rem;
-    height: 17rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    background-color: rgb(255, 241, 219);
+
+    padding: 0;
+
   }
   img {
     width: 4vh;
